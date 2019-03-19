@@ -1,0 +1,24 @@
+﻿@{
+    List<string> csList = new List<string>
+{
+"ASP.NET","ASP.NET MVC","Angular JS"
+};
+}
+<h1>CourseList</h1><hr />
+<table border="1">
+    <tr>
+        <th>S.NO</th>
+        <th>Course Name</th>
+    </tr>
+    @{
+        int n = 1;
+        foreach (string str in csList)
+        {
+            <tr>
+                <td>@n</td>
+                <td>@str</td>
+            </tr>
+            n++;
+        }
+        }
+</table>

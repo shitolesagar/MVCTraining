@@ -1,0 +1,12 @@
+﻿@{
+    string[] course = { "Classic ASP", "ASP.NET", "ASP.NET MVC", "Angular JS", "HTML" };
+}
+<h1>Course</h1> <hr />
+<ul>
+    @{
+        foreach (string str in course)
+        {
+            <li>@str</li>
+        }
+    }
+</ul>
