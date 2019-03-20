@@ -1,0 +1,24 @@
+﻿<h2>Login Page</h2>
+@using (Html.BeginForm())
+{
+    @Html.Label("UserName");
+    @Html.TextBox("uid"); <br /><br />
+    @Html.Label("Password");
+    @Html.Password("pwd")<br /><br />
+    <input type="submit" value="login" />
+}
+@{
+    if (IsPost == true)
+    {
+        string s1 = Request["uid"];
+        string s2 = Request["pwd"];
+        if (s1 == "admin" && s2 == "admin123")
+        {
+            <h2 style="color:green">welcome @s1</h2>
+        }
+        else
+        {
+            <h2 style="color:red">invalid Username or password</h2>
+        }
+    }
+}

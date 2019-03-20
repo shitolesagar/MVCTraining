@@ -130,6 +130,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\Home1Controller.cs" />
     <Compile Include="Controllers\Home2Controller.cs" />
+    <Compile Include="Controllers\Home3Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -230,6 +231,10 @@
     <Content Include="Views\Home2\DataEntryForm.cshtml" />
     <Content Include="Views\Home2\ProductDetails.cshtml" />
     <Content Include="Views\Home2\AdditionOperation.cshtml" />
+    <Content Include="Views\Home2\Login.cshtml" />
+    <Content Include="Views\Home3\Login3.cshtml" />
+    <Content Include="Views\Home3\Sum3.cshtml" />
+    <Content Include="Views\Home3\Index3.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

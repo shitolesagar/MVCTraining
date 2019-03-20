@@ -1,0 +1,9 @@
+﻿<h2>Login</h2><hr />
+@using (Html.BeginForm())
+{
+    @Html.Label("Login id   :");
+    @Html.TextBox("uid");<br /><br />
+    @Html.Label("Password   :");
+    @Html.TextBox("pwd");<br /><br />
+    <input type="submit" value="Login" id="sb1" name="sb1" />
+}

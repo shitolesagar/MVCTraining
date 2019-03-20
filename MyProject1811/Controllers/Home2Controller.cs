@@ -40,5 +40,9 @@ namespace MyProject1811.Controllers
             var s = Request["t1"];
             return View();
         }
+        public ActionResult Login()
+        {
+            return View();
+        }
     }
 }
