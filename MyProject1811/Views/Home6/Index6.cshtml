@@ -1,0 +1,21 @@
+﻿<h2>Product Data</h2> <hr />
+@using (@Html.BeginForm())
+{
+    @Html.Label("Product Name")
+    @Html.TextBox("pname") <br /> <br />
+    @Html.Label("Unit Price")
+    @Html.TextBox("uprice") <br /> <br />
+    @Html.Label("Quentity")
+    @Html.TextBox("qty") <br /> <br />
+    <input type="submit" name="b1" id="b1" value="Get Total" />
+}
+<hr />
+@{
+    if (IsPost)
+    {
+        string str = (string)ViewData["ProductName"];
+        int t = ViewBag.total;
+        <span>Product name: @str</span><br />
+        <span>Total Amount: @t</span>
+    }
+}
