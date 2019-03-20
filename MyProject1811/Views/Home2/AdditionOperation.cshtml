@@ -1,0 +1,14 @@
+﻿<h1>Addition of two Numbers</h1> <hr />
+<form action="/home2/Index2" method="post">
+    Enter First Number  : <input type="text" name="t1" /><br /><br />
+    Enter Second Number : <input type="text" name="t2" /><br /><br />
+    <input type="submit" value="Get Total" />
+</form>
+@{
+    if (IsPost == true)
+    {
+        int n1 = int.Parse(Request["t1"]);
+        int n2 = int.Parse(Request["t2"]);
+        <span style="color:red">Total Amount: @(n1 + n2) </span>
+    }
+}

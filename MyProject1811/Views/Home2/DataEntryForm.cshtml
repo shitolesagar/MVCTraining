@@ -1,0 +1,18 @@
+﻿<h1>Data entry form - Demo1</h1> <hr />
+<form action="/Home2/Index2" method="post">
+    Enter Your Name : <input type="text" id="t1" name="t1" />  <br />
+    <input type="submit" value="Get Message" />
+</form>
+
+@{
+    if (IsPost == true)
+    {
+        <span>This is post request</span><br />
+        string s1 = Request["t1"];
+        <span>Welcome @s1</span>
+    }
+    else
+    {
+        <span>This is get request</span>
+    }
+}

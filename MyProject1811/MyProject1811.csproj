@@ -20,6 +20,8 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <Use64BitIISExpress />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -225,6 +227,9 @@
     <Content Include="Views\Home2\StudInfo.cshtml" />
     <Content Include="Views\Home2\CourseName.cshtml" />
     <Content Include="Views\Home2\CourseNameArray.cshtml" />
+    <Content Include="Views\Home2\DataEntryForm.cshtml" />
+    <Content Include="Views\Home2\ProductDetails.cshtml" />
+    <Content Include="Views\Home2\AdditionOperation.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,20 @@
+﻿<h1>Product Details</h1> <hr />
+<form action="/home2/Index2" method="post">
+    Product Name : <input type="text" id="pname" name="pname" /><br /><br />
+    Unit Price : <input type="text" id="uprice" name="uprice" /><br /><br />
+    Quantity : <input type="text" id="qty" name="qty" /><br /><br />
+    <input type="submit" value="Get Total" />
+</form>
+
+@{
+                /**/
+
+                if (IsPost == true)
+                {
+                    int price = int.Parse(Request["uprice"]);
+                    int qty = int.Parse(Request["qty"]);
+                    int total = price * qty;
+                    <span style="color:red">Total Amount: @total</span>
+                }
+    @Console.ReadLine();
+}

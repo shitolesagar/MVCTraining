@@ -27,6 +27,18 @@ namespace MyProject1811.Controllers
         {
             return View();
         }
-
+        public ActionResult DataEntryForm()
+        {
+            return View();
+        }
+        public ActionResult ProductDetails()
+        {
+            return View();
+        }
+        public ActionResult AdditionOperation()
+        {
+            var s = Request["t1"];
+            return View();
+        }
     }
 }
