@@ -134,11 +134,14 @@
     <Compile Include="Controllers\Home4Controller.cs" />
     <Compile Include="Controllers\Home5Controller.cs" />
     <Compile Include="Controllers\Home6Controller.cs" />
+    <Compile Include="Controllers\Home7Controller.cs" />
+    <Compile Include="Controllers\Home8Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Dept4.cs" />
+    <Compile Include="Models\Dept8.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -244,6 +247,10 @@
     <Content Include="Views\Home5\Details1.cshtml" />
     <Content Include="Views\Home5\Details2.cshtml" />
     <Content Include="Views\Home6\Index6.cshtml" />
+    <Content Include="Views\Home7\Login7.cshtml" />
+    <Content Include="Views\Home7\Index7.cshtml" />
+    <Content Include="Views\Home8\Index8.cshtml" />
+    <Content Include="Views\Home8\Index82.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -1,0 +1,16 @@
+﻿<h2>Login Page</h2><hr />
+@using (@Html.BeginForm())
+{
+    @Html.Label("User Name")
+    @Html.TextBox("uid") <br /> <br />
+    @Html.Label("Password")
+    @Html.TextBox("pwd") <br /> <br />
+    <input type="submit" name="b1" id="b1" value="Login" />
+}<br />
+@{
+    if (IsPost)
+    {
+        string str = ViewBag.ErrorMessage;
+        <span style="color:red">@str</span>
+    }
+}

@@ -1,0 +1,11 @@
+﻿@* step 3 specify data type using @model directive *@
+@using MvcApplication1.Models
+@model Dept
+<h1>DEPERTMENT DETAILS</h1><hr />
+@* step4 sccess data using model property *@
+<span>
+    DeptNo : @Model.DeptNo <br />
+    Dept Name : @Model.DName <br />
+    Location : @Model.Loc<br />
+</span>
+<a href="home8/index82">See All Department List Here</a>

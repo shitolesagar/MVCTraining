@@ -1,0 +1,23 @@
+﻿<h1>Index2</h1>
+@* step 3 specify data type using @model directive *@
+@using MvcApplication1.Models
+@model List<Dept>
+<h1>All Dept Details</h1><hr />
+<table>
+    <tr>
+        <th>DeptNo</th>
+        <th>DeptName</th>
+        <th>Location</th>
+    </tr>
+    @* step4 sccess data using model property *@
+    @{
+        foreach (Dept item in Model)
+        {
+            <tr>
+                <td>@item.DeptNo</td>
+                <td>@item.DName</td>
+                <td>@item.Loc</td>
+            </tr>
+        }
+    }
+</table>
