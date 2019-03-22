@@ -1,0 +1,13 @@
+﻿@using _5AdoDotNet.Models
+<h2>Edit Department</h2><br />
+@using (Html.BeginForm())
+{
+    @Html.Label("Depatrment Number")
+    @Html.TextBox("DeptNo", Model.DeptNo, new { @readonly = true })<br /><br />
+    @Html.Label("Department Name")
+    @Html.TextBox("DName", Model.DName)<br /><br />
+    @Html.Label("Department Location")
+    @Html.TextBox("Location", Model.Location)<br /><br />
+    <input type="submit" value="Edit" name="sb1" class="btn-info" /><br /><br />
+    <a href="/">Back TO Index</a>
+}

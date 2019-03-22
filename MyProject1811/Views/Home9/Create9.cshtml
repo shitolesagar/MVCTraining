@@ -1,0 +1,12 @@
+﻿<h2>Create New Department</h2>
+@using (Html.BeginForm())
+{
+    @Html.Label("Dept No")
+    @Html.TextBox("DeptNo")<br /><br />
+    @Html.Label("DName")
+    @Html.TextBox("DName")<br /><br />
+    @Html.Label("Location")
+    @Html.TextBox("Location")<br /><br />
+    <input type="submit" id="sb1" name="sb1" value="Create" /> <br /><br />
+    <a href="/">Back to Index</a>
+}

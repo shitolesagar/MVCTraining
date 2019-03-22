@@ -136,12 +136,15 @@
     <Compile Include="Controllers\Home6Controller.cs" />
     <Compile Include="Controllers\Home7Controller.cs" />
     <Compile Include="Controllers\Home8Controller.cs" />
+    <Compile Include="Controllers\Home9Controller.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\DataContext9.cs" />
     <Compile Include="Models\Dept4.cs" />
     <Compile Include="Models\Dept8.cs" />
+    <Compile Include="Models\Dept9.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -251,6 +254,11 @@
     <Content Include="Views\Home7\Index7.cshtml" />
     <Content Include="Views\Home8\Index8.cshtml" />
     <Content Include="Views\Home8\Index82.cshtml" />
+    <Content Include="Views\Home9\Index9.cshtml" />
+    <Content Include="Views\Home9\Create9.cshtml" />
+    <Content Include="Views\Home9\Details9.cshtml" />
+    <Content Include="Views\Home9\Edit9.cshtml" />
+    <Content Include="Views\Home9\Delete9.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

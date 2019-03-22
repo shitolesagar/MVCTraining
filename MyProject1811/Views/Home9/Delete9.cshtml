@@ -1,0 +1,14 @@
+﻿@using _5AdoDotNet.Models;
+@model Dept
+<h2>Delete Department</h2><hr />
+<span>
+    Dept Numeber : @Model.DeptNo<br />
+    Dept Name : @Model.DName<br />
+    Location : @Model.Location<br />
+</span><br />
+@using (Html.BeginForm())
+{
+    <span> Do you Want to Delete this Department</span><br />
+    <input type="submit" value="Delete" name="sb1" id="sb1" class="btn-danger" />
+}
+<a href="/Home/Index">Back to Index</a>

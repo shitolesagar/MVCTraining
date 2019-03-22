@@ -16,7 +16,7 @@ namespace MyProject1811
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home8", action = "Index8", id = UrlParameter.Optional }
+                defaults: new { controller = "Home9", action = "Index9", id = UrlParameter.Optional }
             );
         }
     }

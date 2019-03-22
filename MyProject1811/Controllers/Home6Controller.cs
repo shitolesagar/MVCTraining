@@ -13,7 +13,7 @@ public ActionResult Index6()
 return View();
 }
 [HttpPost]
-public ActionResult Index(string pname,int uprice, int qty)
+public ActionResult Index6(string pname,int uprice, int qty)
 {
 int n = uprice * qty;
 ViewData["ProductName"] = pname;

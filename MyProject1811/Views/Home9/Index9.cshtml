@@ -1,0 +1,26 @@
+﻿@using _5AdoDotNet.Models
+@model IEnumerable<Dept>
+<h2>All Dept Details</h2>
+<hr />
+<a href="/Home/Create">Create New</a><br /><br />
+<table width="50%" border="1">
+    <tr>
+        <th>Dept No</th>
+        <th>Dept Name</th>
+        <th>Location</th>
+        <th>Action</th>
+    </tr>
+    @foreach (Dept item in Model)
+    {
+        <tr>
+            <td>@item.DeptNo</td>
+            <td>@item.DName</td>
+            <td>@item.Location</td>
+            <td>
+                <a href="/Home/Details/@item.DeptNo">Details</a>
+                <a href="/Home/Edit/@item.DeptNo">Edit</a>
+                <a href="/Home/Delete/@item.DeptNo">Delete</a>
+            </td>
+        </tr>
+    }
+</table>
